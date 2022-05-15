@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="webpage/bootstrap.min.css"/>
+    <script language="javascript" src="webpage/jquery.min.js"></script>
+	<script language="javascript" src="webpage/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
+	<title>Homepage of Yanhui Guo</title>
+	<link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+	<meta name="description" content="Personal website for Yanhui Guo. I am a 3rd year Ph.D. student at McMaster University, where I work with Prof. Xiaolin Wu. 
+	I received my Master degree in Artificial Intelligence at Huazhong University of Science and Technology in 2019. 
+	I visited The Hong Kong Polytechnic University as a student researcher in 2019. My research interests include computer vision and machine learning.">
+	<meta name="keywords" content="Yanhui Guo, McMaster University, computer vision,PhD candidate, McMaster University">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156016426-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156016426-1');
+</script>
+
+<!-- This CV template is borrowed from Junwei Liang (https://junweiliang.me/) -->
+
+
+</head>
+<body>
+<style type='text/css'>
+	body{
+		font-family:arial,"Microsoft YaHei",微软雅黑,宋体,Helvetica;
+		font-size:15px;
+	}
+	/*
+		div.content:
+			provide the content div in the middle
+	*/
+	body div.content{
+		/*width:1280px;*/
+		width:1200px;
+		margin:0 auto;
+		line-height:30px;
+	}
+	/*
+		header wrapper
+	*/
+	body div.header{
+		background-color:#4d9db3;
+	}
+	body div.header > div.content{
+		padding:10px;
+	}
+	/*
+		footer1
+	*/
+	body div.footer1{
+		margin-top:30px;
+		background-color:#4d9db3;
+	}
+	/*
+		footer2
+	*/
+	body div.footer2{
+		background-color:#4d9db3;
+	}
+	body div.footer > div.content{
+		padding:10px;
+	}
+	body div.footer1 > div.content{
+		padding:20px;
+		line-height:40px;
+		font-size:1.2em;
+	}
+	/*
+		utils css
+	*/
+	div.white-text{
+		color:white;
+	}
+	div.content > div.title{
+		padding:20px 0;
+		border-top:1px silver solid;
+		margin-top:30px;
+		font-size:2em;
+		font-weight:bold;
+	}
+	body a{
+		text-decoration:none;
+	}
+	div.content ul{
+		list-style: disc inside none;
+	}
+	div.content ol{
+		list-style: none inside none;
+	}
+	div.content li{
+		line-height:30px;
+		padding-bottom:5px;
+	}
+	div.content div.float-right{
+		float:right;
+	}
+</style>
+<!-- css for bio -->
+<style type="text/css">
+	/*
+		bio
+	*/
+	div.bio{
+		font-size:1.2em;
+	}
+	div.bio > div.left{
+		float:left;
+		width:250px;
+	}
+	div.bio > div.left > img.me{
+		max-height:300px;
+		margin:10px;
+		max-width:240px;
+		margin-top:80px;
+		margin-left:0px;
+	}
+
+	div.bio > div.right{
+		margin:0 0 0 260px;
+		min-height:360px;
+	}
+	div.bio > div.right > div.line.name{
+		padding:15px 0;
+		line-height:40px;
+	}
+	div.bio > div.right > div.name > span.name,div.bio > div.right > div.name > span.chineseName{
+		font-size:2em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.name > span.chinesesName{
+		font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+	}
+	div.bio > div.right > div.name > span.misc{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	div.bio > div.right > div.line.school{
+		padding:5px 0;
+	}
+
+	div.bio > div.right > div.line.office{
+		padding:5px 0;
+	}
+
+</style>
+<!-- quick link and intro -->
+<style type="text/css">
+div.quickLink{
+	min-height:70px;
+}
+div.quickLink > .block{
+	display:block;
+	float:left;
+	padding:10px 0px;
+	text-align:center;
+	border:1px silver solid;
+	border-radius:5px;
+	box-shadow:2px 2px 1px silver;
+	width:140px;
+	margin-right:50px;
+	margin-top:20px;
+	margin-left: 40px;
+	cursor:pointer;
+}
+</style>
+<!-- research and education -->
+<style type="text/css">
+div.research > ul > li > span.title,div.research > ul > li > div.time,
+div.education > ul > li > span.title,div.education > ul > li > div.time,
+div.pro > ul > li > span.title{
+	font-weight:bold;
+	font-size:1.1em;
+}
+div.research > ul > li > div.info,
+div.education > ul > li > div.info,
+div.pro > ul > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+</style>
+<!-- publications -->
+<style type="text/css">
+div.publications > ol > li{
+	padding-bottom: 30px;
+}
+div.publications > ol > li > span.title{
+	font-weight:bold;
+	font-size:1.2em;
+}
+div.publications > ol > li > div.info{
+	padding-left:20px;
+	word-wrap:break-word;
+}
+div.publications > ol > li > div.info.italic{
+	font-style: italic;
+}
+div.publications div.imgblock{
+	float:left;
+	height:180px;
+	width:300px;
+	padding:10px;
+	margin-right:30px;
+	text-align: center;
+}
+div.publications div.imgblock > img{
+	max-width:100%;
+	max-height:100%;
+}
+img.press{
+	height:20px;
+}
+div.bio > div.left > a.quickLink{
+	margin-right:15px;
+	width: 30px;
+}
+div.bio > div.left > a.quickLink > img{
+	width: 30px;
+	height:30px;
+	padding-left:25px;
+}
+</style>
+<div class="header">
+	<div class="content white-text">
+		Yanhui Guo
+	</div>
+</div>
+
+
+<div class="content bio">
+	<!-- bio -->
+	<div class="left">
+		<img class='me' src="resources/me.jpg"></img>
+		<br/>
+		<!-- <a class="quickLink" href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ">
+			<img class='scholar' style="" src="resources/googlescholar.png"></img>
+		</a>
+		<a class="quickLink" href="https://github.com/JunweiLiang">
+			<img class='github' style="" src="resources/github.png"></img>
+		</a>
+		<a class="quickLink" href="https://paperswithcode.com/search?q=author%3AJunwei+Liang" title="Papers with code">
+			<img class='paperswithcode' style="" src="resources/paperswithcode.png"></img>
+		</a> -->
+		<a class="quickLink" href="https://www.linkedin.com/in/yanhui-g-79a6b0196/">
+			<img class='linkedin' style="" src="resources/linkedin.png"></img>
+		</a>
+		<!-- <a class="quickLink" href="https://www.semanticscholar.org/author/Junwei-Liang/1915796">
+			<img class='semanticscholar' style="height:25px" src="resources/semantic_scholar.png"></img>
+		</a>
+		<br/>
+		<a class="quickLink" href="https://twitter.com/JunweilLiang">
+			<img class='twitter' style="" src="resources/twitter.png"></img>
+		</a>
+		<a class="quickLink" href="https://medium.com/@junweil">
+			<img class='medium' style="" src="resources/medium.png"></img>
+		</a>
+		<a class="quickLink" href="https://www.zhihu.com/people/junwei-liang-50">
+			<img class='zhihu' style="height:25px" title="My Zhihu page" src="resources/zhihu.png"></img>
+		</a>
+		<a class="quickLink" href="https://www.youtube.com/channel/UC-z7ZWp8Rbu2xhxnbAL_bRQ">
+			<img class='youtube' style="height:20px" title="My Youtube channel" src="resources/yt.png"></img>
+		</a>
+		<a class="quickLink" href="https://www.researchgate.net/profile/Junwei_Liang3">
+			<img class='researchgate' style="height:25px" src="resources/rg.png"></img>
+		</a>
+		<br/>
+		<a class="quickLink" href="https://dblp.org/pers/hd/l/Liang_0001:Junwei">
+			<img class='dblp' style="height:20px" src="resources/dblp.png"></img>
+		</a>
+		<a class="quickLink" href="http://aminer.cn/profile/junwei-liang/562cb48c45cedb3398c9e13b">
+			<img class='aminer' style="height:20px;width: 50px;margin-top:4px" src="resources/aminer.png"></img> -->
+		</a>
+		<a class="quickLink" href="camera_ready/Resume_Yanhui.pdf">
+			<img class='aminer' style="height:30px;width: 30px;margin-top:0px" src="resources/cv.png"></img>
+		</a>
+
+		<a class="quickLink" href="https://g.co/kgs/gTWf5W">
+			<img class='aminer' name="Google knowledge graph" style="height:30px;width: 30px;margin-top:0px" src="resources/gkg.png"></img>
+		</a>
+
+	</div>
+	<div class="right">
+		<div class="line name">
+			<br/>
+			<span class="name">Yanhui Guo</span>
+			<span class="misc">(Ph.D. candidate)</span> &nbsp; &nbsp; &nbsp;
+			<span class="chineseName"></span>
+		</div>
+		<div class="line intro">
+			<!-- Greetings!
+			<br/> -->
+            I am a 3rd year Ph.D. student at McMaster University, where I work with <a href="https://www.eng.mcmaster.ca/ece/people/faculty/xiaolin-wu">Prof. Xiaolin Wu </a>. 
+            Now, I am an associate researcher (part-time) at HUAWEI Noah Lab, Canada, where I work on action detection in videos. 
+            I received my Master's degree in Artificial Intelligence at Huazhong University of Science and Technology in 2019. 
+            I visited The Hong Kong Polytechnic University as a student researcher in 2019, where I worked with <a href="http://web.hku.hk/~lupeng/arclab.html"> Dr. Peng Lu </a>. 
+			My research interests include computer vision and machine learning. Besides my Ph.D. research topics, I am also interested in Robotics and AR/VR technologies and I have a relevant background in these areas. 
+			I am looking for a co-op intern position in Canada/USA (starting in 2022 Fall). If you have a suitable vacancy for me, please let me know!
+		 <!-- <br/> -->
+			<!-- <span style="font-weight: bold">My mission: develop AI technologies for social good.</span> -->
+		</div>
+		<div class="line office">
+			<br/>
+			<!-- My thesis is <a href="thesis/">here</a>.  -->
+			Email: gyhui.china at gmail.com 
+		</div>
+	</div>
+</div>
+
+<div class="content quickLink",>
+	<a class="block" href="#publications">Publications</a>
+	<!-- <a class="block" href="#honors">Awards</a> -->
+	<!-- <a class="block" href="#media">Media Coverage</a> -->
+	<a class="block" href="#projects">Projects</a>
+	<a class="block" href="#teaching">Teaching</a>
+	<a class="block" href="#miscellaneous">Miscellaneous</a>
+	<a class="block" href="#skills">Skills</a>
+
+</div>
+<!--
+<div class="content intro">
+	<div class='title'>Introduction</div>
+	 <br/>
+</div>
+-->
+
+<div class="content news">
+	<a name="news"></a>
+	<div class="title">News</div>
+	<ul>
+		<li>
+			[03/2022] One paper on GAN based face restoration is accepted by <span style="font-weight:bold">ICME 2022</span>.
+		</li>
+		<li>
+			[03/2022] One paper on degradation invariant image representation learning is submitted to <span style="font-weight:bold">ECCV 2022 </span>.
+		</li>
+		<li>
+			[03/2022] One paper on image deblurring is submitted to <span style="font-weight:bold">ICIP 2022 </span>.
+		</li>
+		<li>
+			[02/2022] Join <span style="font-weight:bold">Huawei Noah's Ark Lab, Canada </span> as a part-time researcher.
+		</li>
+		<li>
+			[12/2021] One paper on real-world super-resolution dataset collection method is submitted to <span style="font-weight:bold">Transactions on Image Processing (TIP) </span>.
+		</li>
+		<li>
+			[10/2021] One paper on parametric image restoration is accepted by <span style="font-weight:bold">NeurIPS 2021</span>.
+		</li>
+		<li>
+			[07/2020] One paper on multi-modality video restoration is accepted by <span style="font-weight:bold">ACM Multimedia 2020</span>.
+		</li>
+		<!-- <li>
+			[04/2021] Featured in a <a href="https://www.washingtonpost.com/investigations/interactive/2021/dc-police-records-capitol-riot/">front-page news report</a> (04/15) by Washington Post using crowding counting technologies. [<a href="https://www.youtube.com/watch?v=rsQTY9083r8?t=1086">video</a>] [<a href="https://www.zhihu.com/zvideo/1366151651770834944">知乎</a>]
+			<a href="https://www.washingtonpost.com/investigations/interactive/2021/dc-police-records-capitol-riot/">
+					<img class="press" src="resources/wapo.png"></img>
+			</a>
+		</li>
+		<li>
+			[01/2021] Invited presentation at ICPR'20 pattern forecasting workshop. <a href="https://sites.google.com/di.uniroma1.it/patcast/program?authuser=0">Link</a>
+		</li> -->
+
+
+	</ul>
+</div>
+
+<!-- 
+<div class="content honors" name='honors'>
+	<a name="honors"></a>
+	<div class="title">Awards</div>
+	<ul>
+		<li>
+			<a href="https://baijiahao.baidu.com/s?id=1671984902144018200&wfr=spider&for=pc"><span style="font-style: italic;">Rising Star</span></a> (云帆奖-明日之星), World AI Conference <div class="float-right">2020</div>
+		</li>
+		<li>Baidu Scholarship (10 Ph.D. student worldwide) <div class="float-right">2019</div></li>
+		<li>Winner, <a href="https://www.herox.com/ASAPS1/update/3483">Automated Streams Analysis for Public Safety Challenge</a> - $30k prize <div class="float-right">2020</div></li>
+		<li>Best Demo Award at CBMI2019 <div class="float-right">2019</div></li>
+		<li>Yahoo! Fellowship <div class="float-right">2016-2018</div></li>
+		<li>Winner, TRECVID ActEV Challenge <div class="float-right">2019</div></li>
+		<li>Winner, TRECVID Ad-hoc Video Search Challenge, no annotation track  <div class="float-right">2016</div></li>
+		<li>CMU LTI Student Research Symposium Best Paper Honorable Mentions <div class="float-right">2018</div></li>
+		<li>Google Cloud COVID-19 Research Grant - $6200 <div class="float-right">2020</div></li>
+		<li>ICCV Doctoral Consortium Award <div class="float-right">2021</div></li>
+		<li>CVPR, CES, IJCAI, ICASSP, NIST PSCR, NIST TRECVID student travel grants <div class="float-right">2016-2020</div></li>
+		<li>Best Undergraduate Thesis (Top 5%) <div class="float-right">2015</div></li>
+		<li>Second Prize, the National Undergraduates Computer Design Competition of China <div class="float-right">2014</div></li>
+		<li>National Prize (Top 10%), National Undergraduates Innovation Project <div class="float-right">2013</div></li>
+	-->
+	</ul>
+</div>  
+
+<div class="content education">
+	<a name="education"></a>
+	<div class="title">Educations</div>
+	<ul>
+		<li>
+			<span class="title">Ph.D. in Artificial Intelligence and Computer Vision</span> <div class="float-right time">2020.01 - 2023.11</div>
+			<div class="info">School of Electrical Computer and Engineering, McMaster University</div>
+			<div class="info">Advisor:  <a href="https://www.eng.mcmaster.ca/ece/people/faculty/xiaolin-wu">Prof. Xiaolin Wu </a></div>
+			<!-- <div class="info">Thesis: Image/video restoration [<a href="thesis/">Link</a>]</div> -->
+		</li>
+		<li>
+			<span class="title">M.S. in Computer Vision and Robotics</span> <div class="float-right time">2017.09 - 2019.06</div>
+			<div class="info">School of Artificial Intelligence and Automation, Huazhong University of Science and Technology</div>
+			<!-- <div class="info">Advisor: <a href="https://scholar.google.com/citations?user=4kFQsKIAAAAJ&hl=zh-CN">Jie Ma</a></div> -->
+		</li>
+		<li>
+			<span class="title">B.S. in Electrical Engineering</span> <div class="float-right time">2013.09 - 2017.06</div>
+			<div class="info">School of Electrical Engineering, Wuhan University of Technology</div>
+			<!-- <div class="info">Advisor: <a href="https://scholar.google.com/citations?user=8UkYbCMAAAAJ&hl=en">Qin Jin</a></div> -->
+		</li>
+	</ul>
+</div>
+
+<div class="content education">
+	<a name="projects"></a>
+	<div class="title">Projects</div>
+	<ul>
+		<li>
+			<span class="title">Deep context-aware image compression and reconstruction</span> <div class="float-right time">2022.03 - present</div>
+			<div class="info">
+				This is an ongoing research idea. The objective is to reduce the space complexity of compressed image while increasing the decompression quality. 
+			</div>
+			
+		</li>
+		<li>
+			<span class="title">Smart AR helmet (personal project)</span> <div class="float-right time">2021.06 - present</div>
+			<div class="info">
+				I am developing an Augmented Reality system mounted on a helmet. It is used for remote collaboration in the industry environment. The functions include vision enhancement, gesture interaction, information support, AR annotation.
+			</div>
+			
+		</li>
+
+		<li>
+			<span class="title">Degradation-Invariant Image Representation Learning</span> <div class="float-right time">2021.07 - 2022.03</div>
+			<div class="info">
+				A deep degradation-invariant representation learning method.  (<a href="https://drive.google.com/file/d/1xHOahsy6_HsyiPtlYtbU0vg0PZ57ivYP/view?usp=sharing">Paper Link</a>)
+			</div>
+		</li>
+
+		<li>
+			<span class="title">Monitor-Induced Data Collection for Image Restoration</span> <div class="float-right time">2020.08 - 2021.10</div>
+			
+				<div class="info">
+					<ul>
+						<li>
+						To collect optimal real-world super-resolution (SR) data for various camera sensors, we proposed a novel concept of SR training dataset of monitor-induced dual reference training images (DRTI). 
+						The DRTI acquisition system can collect sufficient paired data under lab conditions. It makes it easy to deploy specific SR models for any type of digital camera and real scene
+						<a href="https://drive.google.com/file/d/1nrI9ui2kq0fXV65AcP_6azEmJ9eym3DL/view?usp=sharing">(Paper Link</a>, it will appear on TIP)
+						</li>
+						<li>
+						We extended the above SR data collection method to deblurring dataset. We proposed a real-world deblurring dataset acquisition system (RDAS) and a neural network MEANet to meet the need for real-world 
+						deblurring data. <a href="https://drive.google.com/file/d/1FlBJGM_IFyBuVV38F7JfR24vWXZafHMc/view?usp=sharing">(Paper Link)</a>
+						</li>
+
+					</ul>
+				</div>
+			
+				
+		</li>
+
+		<li>
+			<span class="title">Solving a Parametric Image Restoration Problem with a Single Model</span> <div class="float-right time">2020.11 - 2021.04</div>
+			<div class="info">
+				We proposed a novel system called functional neural network (FuncNet) to solve a parametric image restoration problem with a single model.
+				<a href="https://proceedings.neurips.cc/paper/2021/file/35936504a37d53e03abdfbc7318d9ec7-Paper.pdf">(Paper Link)</a>
+			</div>
+		</li>
+
+		<li>
+			<span class="title">Soft-decoding of Very Low Bit-rate Face Videos</span> <div class="float-right time">2020.02 - 2020.07</div>
+			<div class="info">
+				A novel deep multi-modality neural network was proposed. It exploited the correlations among three modalities, video, audio and emotion state of the speaker, 
+				to remove the video compression artifacts caused by spatial down sampling and quantization. 
+				<a href="https://dl.acm.org/doi/pdf/10.1145/3394171.3413709?casa_token=IIwfym1pO8oAAAAA:fd-myOuALL2L8Giy5n8Uagf0S-9FRw6ezf_SNNgHHXxiF3-1dBx8mqFYUe0yTAbBJ-otPPFYt2PemA">(Paper Link)</a>
+			</div>
+		</li>
+
+		<li>
+			<span class="title">Automatic Landing of a Quadcopter on a Moving Platform</span> <div class="float-right time">2017.09 - 2019.02</div>
+			<div class="info">
+				This project is my Matser's thesis <a href="https://drive.google.com/file/d/1U1X6W4ZSmjYLHtsqMUNNZ66ObhXjDToH/view?usp=sharing">(Paper Link, in Chinese)</a> and the demo videos can be found in these links 
+				(<a href="https://www.youtube.com/watch?v=vfChq-m1n2c"> Video Link1</a>,<a href="https://www.youtube.com/watch?v=ISbWguSYHRY"> Video Link2</a>)
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content publications">
+	<a name="publications"></a>
+	<div class="title">Selected Publications </div> 
+		<!-- [<a href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ" target="_blank">Google Scholar</a>]-->
+	<ol>
+		<li>
+			<div class="imgblock"><img src="camera_ready/DRTI.png"></img></div>
+			<span class="title">Data Acquisition and Preparation for Dual-reference Deep Learning of Image Super-Resolution
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Yanhui Guo</span>, Xiaolin Wu, Xiao Shu</div>
+			<div class="info"><span style="font-weight: bold"> To appear on Transactions on Image Processing (TIP).</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://drive.google.com/file/d/1nrI9ui2kq0fXV65AcP_6azEmJ9eym3DL/view?usp=sharing" target="_blank">[Paper]</a>
+				<a class="" href="https://drive.google.com/file/d/1xjOQPPuTUsXlUjrIlmPnAn1r0fKdt0VK/view?usp=sharing" target="_blank">[Dataset]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/SAIR1.png"></img></div>
+			<span class="title">Semantic-Aware Latent Space Exploration for Face Image Restoration
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Yanhui Guo</span>, Fangzhou Luo, Xiaolin Wu</div>
+			<div class="info"><span style="font-weight: bold"> IEEE International Conference on Multimedia and Expo (ICME 2022).</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://proceedings.neurips.cc/paper/2021/file/35936504a37d53e03abdfbc7318d9ec7-Paper.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/FuncNetnips.bib" target="_blank">[BibTex]</a>
+				<a class="" href="https://github.com/Liamkuo/SAIR" target="_blank">[Code]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/FuncNet.png"></img></div>
+			<span class="title">Functional Neural Networks for Parametric Image Restoration Problems
+			</span>
+			<div class="info text-success italic">Fangzhou Luo,<span style="font-weight:bold">Yanhui Guo</span>, Xiaolin Wu</div>
+			<div class="info"><span style="font-weight: bold">Conference on Neural Information Processing Systems (NeurIPS 2021).</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://proceedings.neurips.cc/paper/2021/file/35936504a37d53e03abdfbc7318d9ec7-Paper.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/FuncNetnips.bib" target="_blank">[BibTex]</a>
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/ACMMM1.gif"></img><img src="camera_ready/ACMMM2.gif"><img src="camera_ready/ACMMM3.gif"></img></div>
+			<span class="title">Deep Multi-modality Soft-decoding of Very Low Bit-rate Face Videos
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Yanhui Guo</span>, Xi Zhang, Xiaolin Wu</div>
+			<div class="info"><span style="font-weight: bold">ACM Multimedia 2020.</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://arxiv.org/pdf/2008.01652.pdf" target="_blank">[Paper]</a>
+				<a class="" href="camera_ready/acm_3394171.3413709.bib" target="_blank">[BibTex]</a>
+				<!-- <a class="" href="https://youtu.be/RW45YQHxIhk" target="_blank">[Demo Video]</a>
+				<a class="" href="https://next.cs.cmu.edu/multiverse" target="_blank">[Project Page/Code/Model]</a> -->
+			</div>
+			<div style="clear:both"></div>
+		</li>
+	</ol>
+</div>
+
+
+
+
+<div class="content research">
+	<a name="research"></a>
+	<div class="title">Research Experience</div>
+	<ul>
+		<li>
+			<span class="title">(Part-time) Associate Researcher at Huawei Noah's Ark Lab</span> <div class="float-right time">2022.02 - present</div>
+			<div class="info">
+				Worked on video understanding and action detection.
+			</div>
+		</li>
+		<li>
+			<span class="title">(Full-time) Researcher at Netease Games AILab</span> <div class="float-right time">2019.06 - 2020.01</div>
+			<div class="info">
+				Developed a neural solver for optical motion capture (MoCap) data. The solver can directly produce skeleton sequences and clean marker sequences from raw MoCap markers, without any laborious manual operations.
+				I also participated in developing a video-based system for the automatic generation of 3D digital human animation. 
+			</div>
+		</li>
+		<li>
+			<span class="title">Research Assistant at The Hong Kong Polytechnic University </span> <div class="float-right time">2019.02 - 2019.06</div>
+			<div class="info">
+				My work was to develop robotic navigation algorithms that help the MAV(Micro Aerial Vehicle) complete an automatic flight, avoiding a serial of obstacles.
+				<!--[<a href="https://www.nist.gov/video/real-time-video-analytics-situation-awareness" target="_blank">PSCR 2018 presentation</a>, <a href="https://www.nist.gov/ctl/pscr/2019-stakeholder-meeting-analytics-sessions" target="_blank">2019</a>]-->
+			</div>
+		</li>
+		<li>
+			<span class="title">Research Intern at Tencent</span> <div class="float-right time">2018.05 - 2018.08</div>
+			<div class="info">
+				Participated in developing a multi-agent AI system of a MOBA game (Honor of Kings, 王者荣耀)	
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content pro">
+	<a name="teaching"></a>
+	<div class="title">Teaching </div>
+	<ul>
+		<li>
+			<span class="title">Teaching Assistant of Course 3SK3: Computer-Aided Engineering
+			</span><div class="float-right time">2022 Winter</div>
+			<div class="info">At McMaster University. </div>
+		</li>
+		<li>
+			<span class="title">Teaching Assistant of Course 3TQ3: Advanced Probability and Random Processes
+			</span><div class="float-right time">2021 Fall</div>
+			<div class="info">At McMaster University. </div>
+		</li>
+		<li>
+			<span class="title">Teaching Assistant of Course 3SK3: Computer-Aided Engineering
+			</span><div class="float-right time">2021 Winter</div>
+			<div class="info">At McMaster University. </div>
+		</li>
+
+		<li>
+			<span class="title">Teaching Assistant of Course 3FK4: Electromagnetics II
+			</span><div class="float-right time">2020 Fall</div>
+			<div class="info">At McMaster University. </div>
+		</li>
+	</ul>
+</div>
+<div class="content pro">
+	<div class="title">Academic Service</div>
+	<ul>
+		<!-- <li>
+			<span class="title">Journal Reviewer</span>
+			<div class="info">IEEE Transactions on Image Processing (TIP)</div>
+			<div class="info">IEEE Access</div>
+		</li> -->
+		<li>
+			<span class="title">Conference Reviewer</span>
+			<div class="info">CVPR/ECCV/ICML/NeurIPS, 2022</div>
+		</li>
+	</ul>
+</div>
+
+<div class="content pro">
+	<a name="miscellaneous"></a>
+	<div class="title">Miscellaneous</div>
+	<ul>
+		<li>
+			<span class="title"><a href="http://www.id.netgyro.com/">Online ID Image Generation Tool (In Chinese)</a></span>
+			<div class="info">I individually developed this website tool. 
+				I expected to learn some website development technologies such as front-end development and back-end development. 
+				I believe that Practice is the best teacher so I created this website. To finish it well, I have learned Javascript, HTML, and the Flask framework. Owing to this work, I have learned how to deploy an AI model on the web service and design good interface pages for the users. 
+				To date, over 400 users have paid for my service. </div>
+		</li>
+		<li>
+			<span class="title"><a href="http://www.gov.cn/xinwen/2019-01/25/content_5361206.htm">My Master's project was widely reported </a></span>
+			<div class="info">
+				The news of the success of my project was published on the Chinese government website. 			
+			</div>
+		</li>
+
+	</ul>
+</div>
+
+<div class="content pro">
+	<a name="skills"></a>
+	<div class="title">Skills</div>
+	<ul>
+		<li>
+			<span style="font-weight: bold">Coding languages:</span> <span style="font-style: italic;"> Python/C++/C#/Javascript/HTML/Matlab</span>
+			<!-- [<a href="https://www.washingtonpost.com/world/interactive/2021/myanmar-crackdown-military-coup//">Link</a>] -->
+		</li>
+		<li>
+			<span style="font-weight: bold">Machine learning tools:</span> <span style="font-style: italic;"> PyTorch/Caffe/Scikit-learn</span>
+		</li>
+		<li>
+			<span style="font-weight: bold">Computer vision skills:</span> <span style="font-style: italic;"> Monocular/Stereo image processing; Video processing; Image registration; Image restoration; GAN based image generation</span>
+		</li>
+		<li>
+			<span style="font-weight: bold">Others:</span> <span style="font-style: italic;"> Unity/Blender for 3D digital human related projects; I am also familiar with some hardware design knowledge such as PCB design and embedding system development.</span>
+		</li>
+	</ul>
+</div>
+
+
+
+
+<!-- <div class="footer footer1">
+	<div class="content white-text">
+		Informedia Lab, Language Technologies Institute <br/>
+		School of Computer Science <br/>
+		Carnegie Mellon University
+	</div>-->
+<div class="footer footer2">
+	<div class="content white-text">
+		<p>© All rights reserved.</p>
+		<!-- Created and designed by <a style="color:white" href="https://junweiliang.me">Yanhui Gup</a> in McMaster. -->
+	</div>
+</div> 
+
+
+</body>
+</html>
