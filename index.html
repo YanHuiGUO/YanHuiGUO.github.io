@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="webpage/cssReset.css"/>
 	<title>Homepage of Yanhui Guo</title>
 	<link rel="icon" type="image/x-icon" href="favicon-16x16.png">
-	<meta name="description" content="Personal website for Yanhui Guo. I am a 3rd year Ph.D. student at McMaster University, where I work with Prof. Xiaolin Wu. 
+	<meta name="description" content="Personal website for Yanhui Guo. I am a 3-rd year Ph.D. student at McMaster University, where I work with Prof. Xiaolin Wu. 
 	I received my Master degree in Artificial Intelligence at Huazhong University of Science and Technology in 2019. 
 	I visited The Hong Kong Polytechnic University as a student researcher in 2019. My research interests include computer vision and machine learning.">
 	<meta name="keywords" content="Yanhui Guo, McMaster University, computer vision,PhD candidate, McMaster University">
@@ -296,7 +296,7 @@ div.bio > div.left > a.quickLink > img{
 		<div class="line intro">
 			<!-- Greetings!
 			<br/> -->
-            I am a 3rd year Ph.D. student at McMaster University, where I work with <a href="https://www.eng.mcmaster.ca/ece/people/faculty/xiaolin-wu">Prof. Xiaolin Wu </a>. 
+            I am a 3-rd year Ph.D. student at McMaster University, where I work with <a href="https://www.eng.mcmaster.ca/ece/people/faculty/xiaolin-wu">Prof. Xiaolin Wu </a>. 
             Now, I am an associate researcher at HUAWEI Noah's Ark Lab, Canada, where I work on video understanding. 
             I received my Master's degree in Artificial Intelligence at Huazhong University of Science and Technology in 2019. 
             I visited The Hong Kong Polytechnic University as a student researcher in 2019, where I worked with <a href="https://arclab.hku.hk/"> Dr. Peng Lu </a>. 
@@ -334,6 +334,12 @@ div.bio > div.left > a.quickLink > img{
 	<a name="news"></a>
 	<div class="title">News</div>
 	<ul>
+		<li>
+			[08/2022] One paper on temporal action detection is submitted to <span style="font-weight:bold">AAAI 2023</span>.
+		</li>
+		<li>
+			[08/2022] One paper on domain adaption is submitted to <span style="font-weight:bold">AAAI 2023</span>.
+		</li>
 		<li>
 			[06/2022] One paper on super-resolution is accepted by <span style="font-weight:bold">IEEE Transactions on Image Processing (TIP)</span>.
 		</li>
@@ -396,7 +402,7 @@ div.bio > div.left > a.quickLink > img{
 	<div class="title">Educations</div>
 	<ul>
 		<li>
-			<span class="title">Ph.D. in Artificial Intelligence and Computer Vision</span> <div class="float-right time">2020.01 - 2023.11</div>
+			<span class="title">Ph.D. in Artificial Intelligence and Computer Vision</span> <div class="float-right time">2020.01 - 2023.12</div>
 			<div class="info">School of Electrical Computer and Engineering, McMaster University</div>
 			<div class="info">Advisor:  <a href="https://www.eng.mcmaster.ca/ece/people/faculty/xiaolin-wu">Prof. Xiaolin Wu </a></div>
 			<!-- <div class="info">Thesis: Image/video restoration [<a href="thesis/">Link</a>]</div> -->
@@ -419,15 +425,18 @@ div.bio > div.left > a.quickLink > img{
 	<div class="title">Projects</div>
 	<ul>
 		<li>
-			<span class="title">Deep Video Understanding: Action Classification and Action Localization</span> <div class="float-right time">2022.02 - present</div>
+			<span class="title">Video Understanding: Action Classification and Action Localization</span> <div class="float-right time">2022.02 - present</div>
 			<div class="info">
-				I am working on the self-supervised technologies about action classification and action localization.
+				My job is to develop cutting-edge technologies about video classification and temporal action localization. I focus on developing efficient detection head neural networks for temporal 
+				action detection. Besides, I work on video summarization and video highlight detection by semi/weakly supervised training, which can be widely used in video analysis.
 			</div>
 		</li>
 		<li>
 			<span class="title">Deep Context-aware Image Compression and Reconstruction</span> <div class="float-right time">2022.03 - present</div>
 			<div class="info">
-				This is an ongoing research idea. The objective is to reduce the space complexity of compressed image while increasing the decompression quality. 
+				This is an ongoing research idea. The objective is to reduce the space complexity of compressed image while increasing the decompression quality. I develop an compression residual track prediction network 
+				which can predict critical pixels that are lost when compressing the images. 
+				These critical pixels will be conveyed to the soft-decoding part to improve the perceptual quality. 
 			</div>
 			
 		</li>
@@ -440,9 +449,9 @@ div.bio > div.left > a.quickLink > img{
 		</li> -->
 
 		<li>
-			<span class="title">Improving the Noise-Robustness of Representations via Domain Translation</span> <div class="float-right time">2021.07 - 2022.07</div>
+			<span class="title">On Improving the Noise-Robustness of Representations via Domain Translation</span> <div class="float-right time">2021.07 - 2022.07</div>
 			<div class="info">
-				A deep noise-resistant representation learning method.  (<a href="https://drive.google.com/file/d/10qFebrPEuLJZz5SFXghddbFVEvpG12Et/view?usp=sharing">Paper Link</a>)
+				A deep noise-resistant representation learning method. The proposed Technology can endow existing representation learning methods robustness against unseen noise in applications. (<a href="https://drive.google.com/file/d/10qFebrPEuLJZz5SFXghddbFVEvpG12Et/view?usp=sharing">Paper Link</a>)
 			</div>
 		</li>
 
@@ -499,6 +508,39 @@ div.bio > div.left > a.quickLink > img{
 	<div class="title">Selected Publications </div> 
 		<!-- [<a href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ" target="_blank">Google Scholar</a>]-->
 	<ol>
+		<li>
+			<div class="imgblock"><img src="camera_ready/DCIA1.png" width="70%" height="70%"></img><img src="camera_ready/DCIA2.png" width="80%" height="80%"></img></div>
+			<span class="title">DCIA: Learning Dual Context Information Aggregation Detection Head for Temporal Action Localization
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Yanhui Guo</span>, Deepak Sridhar, Yaoxin Li, Hanwen Liang, Lizhe Chen, Peng Dai, Songcen Xu, Juwei Lu</div>
+			<div class="info"><span style="font-weight: bold">Submitted to AAAI 2023.</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://drive.google.com/file/d/1dS3LO8BJ3dmtbKHGRDJGnSiuQMwmbHjb/view" target="_blank">[Paper]</a>
+				<!-- <a class="" href="camera_ready/acm_3394171.3413709.bib" target="_blank">[BibTex]</a> -->
+				<!-- <a class="" href="https://youtu.be/RW45YQHxIhk" target="_blank">[Demo Video]</a>
+				<a class="" href="https://next.cs.cmu.edu/multiverse" target="_blank">[Project Page/Code/Model]</a> -->
+			</div>
+			<div style="clear:both"></div>
+		</li>
+		<li>
+			<div class="imgblock"><img src="camera_ready/DI_Noise.png" ></img></div>
+			<span class="title">On Improving the Noise-Robustness of Representations via Domain Translation
+			</span>
+			<div class="info text-success italic"><span style="font-weight:bold">Yanhui Guo</span>, Fangzhou Luo</div>
+			<div class="info"><span style="font-weight: bold">Submitted to AAAI 2023.</span> &nbsp;
+				<!-- <iframe src="https://ghbtns.com/github-btn.html?user=JunweiLiang&repo=Multiverse&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe> -->
+			</div>
+			<div class="stuff">
+				<a class="" href="https://drive.google.com/file/d/10qFebrPEuLJZz5SFXghddbFVEvpG12Et/view" target="_blank">[Paper]</a>
+				<!-- <a class="" href="camera_ready/acm_3394171.3413709.bib" target="_blank">[BibTex]</a> -->
+				<!-- <a class="" href="https://youtu.be/RW45YQHxIhk" target="_blank">[Demo Video]</a>
+				<a class="" href="https://next.cs.cmu.edu/multiverse" target="_blank">[Project Page/Code/Model]</a> -->
+			</div>
+			<div style="clear:both"></div>
+		</li>
+
 		<li>
 			<div class="imgblock"><img src="camera_ready/DRTI.png"></img></div>
 			<span class="title">Data Acquisition and Preparation for Dual-reference Deep Learning of Image Super-Resolution
@@ -575,7 +617,7 @@ div.bio > div.left > a.quickLink > img{
 			</div>
 		</li>
 		<li>
-			<span class="title">(Full-time) Researcher at Netease Games AILab</span> <div class="float-right time">2019.06 - 2020.01</div>
+			<span class="title">(Full-time) Machine Learning Engineer at Netease Games AILab</span> <div class="float-right time">2019.06 - 2020.01</div>
 			<div class="info">
 				I developed a neural solver for optical motion capture (MoCap) data. The solver can directly produce skeleton sequences and clean marker sequences from raw MoCap markers, without any laborious manual operations.
 				I also participated in developing a video-based system for the automatic generation of 3D digital human animation. 
@@ -589,7 +631,7 @@ div.bio > div.left > a.quickLink > img{
 			</div>
 		</li>
 		<li>
-			<span class="title">Research Intern at Tencent</span> <div class="float-right time">2018.05 - 2018.08</div>
+			<span class="title">(Intern) Machine Learning Engineer at Tencent</span> <div class="float-right time">2018.05 - 2018.08</div>
 			<div class="info">
 				I participated in developing a multi-agent AI system of a MOBA game (Honor of Kings, 王者荣耀)	
 			</div>
@@ -669,10 +711,13 @@ div.bio > div.left > a.quickLink > img{
 			<!-- [<a href="https://www.washingtonpost.com/world/interactive/2021/myanmar-crackdown-military-coup//">Link</a>] -->
 		</li>
 		<li>
-			<span style="font-weight: bold">Machine learning tools:</span> <span style="font-style: italic;"> PyTorch/Caffe/Scikit-learn</span>
+			<span style="font-weight: bold">Machine learning tools:</span> <span style="font-style: italic;"> PyTorch/Tensorflow/Caffe/Scikit-learn/Xgboost/Opencv</span>
 		</li>
 		<li>
-			<span style="font-weight: bold">Computer vision skills:</span> <span style="font-style: italic;"> Monocular/Stereo image processing; Video processing; Image registration; Image restoration; GAN based image generation</span>
+			<span style="font-weight: bold">Computer vision skills:</span> <span style="font-style: italic;"> Monocular/Stereo Image Processing; Video Processing; Image Registration; Image restoration; GAN based Image Generation; Learning based Video Analysis</span>
+		</li>
+		<li>
+			<span style="font-weight: bold">Machine Learning skills:</span> <span style="font-style: italic;"> Data Cleaning; Clustering; Feature Engineering; Familiar with common used ML algorithms. </span>
 		</li>
 		<li>
 			<span style="font-weight: bold">Others:</span> <span style="font-style: italic;"> Unity/Blender for 3D digital human related projects; I am also familiar with some hardware design knowledge such as PCB design and embedding system development.</span>
